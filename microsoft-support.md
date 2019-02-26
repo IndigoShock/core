@@ -12,12 +12,10 @@ This table describes support type, supported patch version and end of support da
 
 |  Version  |  Release Date | Support Level | Supported Patch Version | End of Support |
 | -- | -- | -- | -- | -- |
-|[.NET Core 2.1](https://blogs.msdn.microsoft.com/dotnet/2018/05/30/announcing-net-core-2-1) | May 30, 2018 | Current\* | [2.1.0](https://www.microsoft.com/net/download/dotnet-core/runtime-2.1.0) | Three months after a subsequent Current release or 12 months after next LTS release, whichever is shorter. |
-| [.NET Core 2.0](https://blogs.msdn.microsoft.com/dotnet/2017/08/14/announcing-net-core-2-0/) | August 14, 2017 | Current | [2.0.7](https://www.microsoft.com/net/download/dotnet-core/runtime-2.0.7) | September 1, 2018 |
-| [.NET Core 1.1](https://blogs.msdn.microsoft.com/dotnet/2016/11/16/announcing-net-core-1-1/) | November 16, 2016 | LTS | [1.1.8](https://www.microsoft.com/net/download/dotnet-core/runtime-1.1.8) | June 27 2019 or 12 months after next LTS release, whichever is shorter. |
-| [.NET Core 1.0](https://blogs.msdn.microsoft.com/dotnet/2016/06/27/announcing-net-core-1-0/) | June 27, 2016 | LTS | [1.0.11](https://www.microsoft.com/net/download/dotnet-core/runtime-1.0.11) | June 27 2019 or 12 months after next LTS release, whichever is shorter. |
-
-\* This Current release is expected to switch to LTS at a later date.
+| [.NET Core 2.2](https://blogs.msdn.microsoft.com/dotnet/) | December 04, 2018 | Current | [2.2.2](https://www.microsoft.com/net/download/dotnet-core/runtime-2.2.1) | |
+| [.NET Core 2.1](https://blogs.msdn.microsoft.com/dotnet/2018/05/30/announcing-net-core-2-1) | May 30, 2018 | LTS | [2.1.8](https://www.microsoft.com/net/download/dotnet-core/runtime-2.1.7) | At least three years from LTS declaration (August 21, 2018). |
+| [.NET Core 1.1](https://blogs.msdn.microsoft.com/dotnet/2016/11/16/announcing-net-core-1-1/) | November 16, 2016 | Maintenance | [1.1.11](https://www.microsoft.com/net/download/dotnet-core/runtime-1.1.10) | June 27, 2019 |
+| [.NET Core 1.0](https://blogs.msdn.microsoft.com/dotnet/2016/06/27/announcing-net-core-1-0/) | June 27, 2016 | Maintenance | [1.0.14](https://www.microsoft.com/net/download/dotnet-core/runtime-1.0.13) | June 27, 2019 |
 
 ## Release Types
 
@@ -34,20 +32,31 @@ Both types of releases receive critical fixes throughout their lifecycle, for se
 
 ### Long Term Support (LTS) releases
 
-LTS releases are supported for the following timeframe, whichever is shorter:
+LTS releases are supported for the following timeframe, whichever is longer:
 
 * Three years after initial release.
 * One year after a subsequent **LTS** release.
 
+Note: .NET Core 1.x was released under an earlier definition of LTS. See: [.NET Core 1.x "shorter" LTS definition](https://github.com/dotnet/core/blob/e2f22a7106860c0e5dc98bb36dc648a779944ad5/microsoft-support.md#long-term-support-lts-releases).
+
 ### Current releases
 
-Current releases are supported for the following timeframe, whichever is shorter:
+Current releases are supported for the following timeframe:
 
-* Three months after a subsequent **Current** release
-* One year after a subsequent **LTS** release
+* Three months after a subsequent **Current** or **LTS** release
+
+### Maintenance releases
+
+Maintenance releases are in the last stage of the lifecycle . During Maintenance, a release will still receive security updates. The length of Maintenance time is determined by the type of release it was previously; as described in the above section.
 
 ### End of support
 
 End of support refers to the date when Microsoft no longer provides fixes, updates, or online technical assistance. As this date nears, make sure you have the latest available update\* installed. Without Microsoft support, you will no longer receive security updates that can help protect your machine from harmful viruses, spyware, and other malicious software that can steal your personal information.
 
 \* Updates are cumulative, with each update built upon all of the updates that preceded it. A device needs to install the latest update to remain supported. Updates may include new features, fixes (security and/or non-security), or a combination of both. Not all features in an update will work on all devices. Update availability may vary, for example by country, region, network connectivity, or hardware capabilities (including, for example, free disk space).
+
+### Out of support .NET Core releases
+
+|  Version  |  End of Support |
+| -- | -- |
+| [.NET Core 2.0](https://blogs.msdn.microsoft.com/dotnet/2017/08/14/announcing-net-core-2-0/) | October 1, 2018 |
